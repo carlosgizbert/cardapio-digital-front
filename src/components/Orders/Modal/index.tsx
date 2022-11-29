@@ -88,7 +88,7 @@ export default function OrderModal({ order, visible, onClickClose, onCancelOrder
           <S.Items>
             {order.products.map(({_id, product, quantity}) => {
               return (
-                <S.Item key={_id}>
+                <S.Item key={`${_id}-${product.name}`}>
                   <S.Image src={`http://localhost:3001/uploads/${product.imagePath}`}
                   />
                   <small>{quantity}x</small>

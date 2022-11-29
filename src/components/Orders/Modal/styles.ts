@@ -101,7 +101,6 @@ export const Image = styled.div<{ src: string }>`
   height: 64px;
   width: 64px;
   background-image: ${({ src }) => `url(${src})`};
-
   background-position: center center;
   background-size: cover;
   border-radius: 6px;
