@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Order, OrderStatus } from '../types/Order'
 
 export const api = axios.create({
-  baseURL: 'http://192.168.15.12:3001/',
+  baseURL: 'http://18.231.110.184:3001/',
 })
 
 export async function getOrders() {
