@@ -17,7 +17,7 @@ export default function Orders() {
   const done = orders.filter((order) => order.status === 'DONE')
 
   useEffect(() => {
-    const socket = socketIo('ws://54.94.46.47/api', {
+    const socket = socketIo('ws://54.94.46.47:3000', {
       transports: ['websocket'],
     })
     socket.on('orders@new', () => {
