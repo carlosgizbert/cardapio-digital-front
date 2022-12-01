@@ -9,7 +9,6 @@ import Orders from './components/Orders'
 export function App(){
 
   const queryClient = new QueryClient()
-
   return (
     <QueryClientProvider client={queryClient}>
       <GlobalStyles />

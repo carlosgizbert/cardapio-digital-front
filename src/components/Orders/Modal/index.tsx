@@ -89,7 +89,7 @@ export default function OrderModal({ order, visible, onClickClose, onCancelOrder
             {order.products.map(({_id, product, quantity}) => {
               return (
                 <S.Item key={`${_id}-${product.name}`}>
-                  <S.Image src={`http://54.94.46.47:3000/uploads/${product.imagePath}`}
+                  <S.Image src={`${import.meta.env.VITE_BASE_URL}/uploads/${product.imagePath}`}
                   />
                   <small>{quantity}x</small>
                   <div>
